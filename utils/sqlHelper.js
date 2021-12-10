@@ -1,5 +1,5 @@
 import { isEmpty, Logger, NOOP } from "./index";
-import { databaseProxy, getDatabaseProxyEnabled, getProxyDeferred } from "utils/qnProxy";
+import { databaseProxy, getDatabaseProxyEnabled, getProxyDeferred } from "./qnProxy";
 import Taro from "@tarojs/taro";
 
 /**

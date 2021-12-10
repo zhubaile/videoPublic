@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { userInfoInit, authLimited, getUserInfo } from "utils/userinfo";
-import { isEmpty, NOOP } from "utils/index";
+import { userInfoInit, authLimited, getUserInfo } from "./userinfo";
+import { isEmpty, NOOP } from "./index";
 
 /**
  * 重新授权

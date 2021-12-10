@@ -1,8 +1,8 @@
-import { NOOP } from 'utils/index';
-import { getCloud } from 'utils/cloud';
-import { authDeferred } from 'utils/userinfo';
+import { NOOP } from './index';
+import { getCloud } from './cloud';
+import { authDeferred } from './userinfo';
 // import { api as Api } from 'utils/api';
-import { getProxyDeferred, getQNProxyEnabled, invokeTopProxy } from 'utils/qnProxy';
+import { getProxyDeferred, getQNProxyEnabled, invokeTopProxy } from './qnProxy';
 
 /**
  * top请求调用 从小程序云

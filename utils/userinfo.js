@@ -1,11 +1,11 @@
 import Taro from '@tarojs/taro';
-import { ENV } from 'utils/env';
-import { getDeferred, isIDE, NOOP, isEmpty } from 'utils/index';
-import { Logger } from 'utils/logger';
-import { entry, initphpSessionIdDeferred, api } from 'utils/api';
-import { storage } from 'utils/storage';
-import { events } from 'utils/eventManager';
-import { showConfirmModal } from 'utils/prompt';
+import { ENV } from './env';
+import { getDeferred, isIDE, NOOP, isEmpty } from './index';
+import { Logger } from './logger';
+import { entry, initphpSessionIdDeferred, api } from './api';
+import { storage } from './storage';
+import { events } from './eventManager';
+import { showConfirmModal } from './prompt';
 
 export const userInfoDeferred = getDeferred();
 export const userNickDeffered = getDeferred();

@@ -1,10 +1,10 @@
-import { isEmpty, NOOP } from 'utils/index';
-import { ENV } from 'utils/env';
-import { Logger } from 'utils/logger';
-import { getUserInfo } from 'utils/userinfo';
-import { resetAuthorize } from 'utils/resetAuthorize';
-import { qnapi } from 'utils/qnApi';
-import { showConfirmModal } from 'utils/prompt';
+import { isEmpty, NOOP } from './index';
+import { ENV } from './env';
+import { Logger } from './logger';
+import { getUserInfo } from './userinfo';
+import { resetAuthorize } from './resetAuthorize';
+import { qnapi } from './qnApi';
+import { showConfirmModal } from './prompt';
 
 /**
  * qnRouter这个方法本身是qnapi方法的路由部分

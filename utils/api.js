@@ -1,22 +1,11 @@
 import Taro from "@tarojs/taro";
-// import { buildArgs, formatError, getDeferred, isIDE, NOOP, showConfirmModal } from "./index";
-// import { Logger } from "mapp_common/utils/logger";
-// import { getCloud } from "mapp_common/utils/cloud";
-// import moment from "mapp_common/utils/moment";
-// import { getApiProxyEnabled, getProxyDeferred, invokeApiProxy } from "mapp_common/utils/qnProxy";
-// import { currentShopStatus } from "mapp_common/utils/shopStatus";
-// import { getUserInfo } from "mapp_common/utils/userInfoChanger";
-// import { sleep, getCurrentPageName } from "mapp_common/utils/index";
-// import { isFunction } from "tradePublic/utils";
-// import { string } from "prop-types";
-
-import { ENV } from 'utils/env';
-import { getDeferred, isIDE, isFunction, NOOP, sleep } from 'utils/index';
-import { Logger } from 'utils/logger';
+import { ENV } from './env';
+import { getDeferred, isIDE, isFunction, NOOP, sleep } from './index';
+import { Logger } from './logger';
 import moment from 'moment';
-import { getCloud } from "utils/cloud";
-import { testUser, getUserInfo } from "utils/userinfo";
-import { showConfirmModal } from 'utils/prompt';
+import { getCloud } from "./cloud";
+import { testUser, getUserInfo } from "./userinfo";
+import { showConfirmModal } from './prompt';
 
 /**
  * 对象转换为www-x-form-encoded

@@ -1,7 +1,7 @@
-import { getRemoteLogEnabled, getProxyDeferred, proxySend } from 'utils/qnProxy';
-import { getSettings } from 'utils/settings';
-import { getSystemInfo } from 'utils/systemInfo';
-import { showConfirmModal } from 'utils/prompt';
+import { getRemoteLogEnabled, getProxyDeferred, proxySend } from './qnProxy';
+import { getSettings } from './settings';
+import { getSystemInfo } from './systemInfo';
+import { showConfirmModal } from './prompt';
 
 const LEVELS = {
     error:0,

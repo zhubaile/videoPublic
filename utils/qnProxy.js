@@ -1,7 +1,7 @@
 import Taro  from '@tarojs/taro';
-import { getDeferred, NOOP } from "utils/index";
-import { getSettings } from "utils/settings";
-import { doSql } from "utils/sqlHelper";
+import { getDeferred, NOOP } from "./index";
+import { getSettings } from "./settings";
+import { doSql } from "./sqlHelper";
 
 let proxyDeferred;
 let databaseProxyDeferred = getDeferred();
