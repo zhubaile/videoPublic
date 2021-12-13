@@ -1,5 +1,5 @@
 import Taro from "@tarojs/taro";
-import { ENV } from './env';
+import { ENV } from 'utils/env';
 // import { getRemoteLogEnabled, getProxyDeferred, proxySend } from 'utils/qnProxy';
 
 /**
