@@ -1,7 +1,5 @@
 import { isEmpty, NOOP } from './index';
-import { ENV } from './env';
 import { Logger } from './logger';
-import { getUserInfo } from './userinfo';
 import { resetAuthorize } from './resetAuthorize';
 import { qnapi } from './qnApi';
 import { showConfirmModal } from './prompt';

@@ -289,7 +289,6 @@ export async function entry ({ accessToken, callback = NOOP, errCallback = NOOP 
                 method: 'POST',
                 body: { ...args },
             }).then(res => {
-                debugger
                 resolve(res);
             }).catch(error => {
                 Taro.showToast({ icon: 'fail', title: '登录失败 重试中..' + tryTime });

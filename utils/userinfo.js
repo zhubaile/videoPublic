@@ -41,9 +41,10 @@ export const userInfoInit = (callback = NOOP) => {
         });
         // 这里说明是主账号正在在授权，保存到后端 意味着永远都不会授权失效才对
         if (!isEmpty(res.nickName) && !res.nickName.includes(':')) {
-            if (ENV.app == 'item') {
-                saveMainAccessToken();
-            }
+            // if (ENV.app == 'item') {
+            //     saveMainAccessToken();
+            // }
+            saveMainAccessToken();
         }
         fetchUserInfoFromTcUser({
             nick,
@@ -265,10 +266,13 @@ export const fetchUserInfoFromTcUser = ({ callback, nick }) => {
             if (!isEmpty(res.userInfo)) {
                 Object.assign(newUserInfo, res.userInfo);
             }
-            if (ENV.app == 'item') {
-                if (!isEmpty(res.miniappConfig)) {
-                    Object.assign(newUserInfo, res.miniappConfig);
-                }
+            // if (ENV.app == 'item') {
+            //     if (!isEmpty(res.miniappConfig)) {
+            //         Object.assign(newUserInfo, res.miniappConfig);
+            //     }
+            // }
+            if (!isEmpty(res.miniappConfig)) {
+                Object.assign(newUserInfo, res.miniappConfig);
             }
             callback(newUserInfo);
         },

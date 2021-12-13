@@ -56,60 +56,6 @@ import { ENV } from './env';
 export function NOOP () {};
 
 /**
- * 日志输出
- */
-export const Logger = {
-    debug: (...args) => { // 这边的重复是为了ide的补全
-        _log('debug', ...args);
-    },
-    log: (...args) => {
-        _log('log', ...args);
-    },
-    warn: (...args) => {
-        _log('warn', ...args);
-    },
-    error: (...args) => {
-        _log('error', ...args);
-    },
-    alert:(...args) => {
-        showConfirmModal({
-            title:'出错了',
-            content:JSON.stringify(args),
-            showCancel: false,
-        });
-        _log('error', args);
-    },
-};
-/**
- * 日志输出方法
- * @param func
- * @param strs
- * @private
- */
- export function _log (func, ...strs) {
-    // let _console = console;
-    // let systemInfo = getSystemInfo();
-    // if (!(systemInfo.system && systemInfo.system.startsWith('9.') && systemInfo.platform == 'iOS')) { // ios9不能console.log.apply
-    //     _console[func].apply(null, [...strs]);
-    // }
-    
-    // if (getRemoteLogEnabled()) {
-    //     getProxyDeferred().then(() => {
-    //         remoteLogSend({ type:func, content:strs });
-    //     });
-    // }
-    // if (LEVELS[func] <= LEVELS[getSettings().proxy.logRecordLevel]) {
-    //     recordLog(func, ...strs);
-    // }
-}
-/**
- * remoteLog发送内容
- * @param strs
- */
-//  export function remoteLogSend (args) {
-//     proxySend({ category:"LOG", ...args });
-// }
-/**
  * 是否是ide 最好把这个在上传的时候改成return false 鬼知道千牛的my.qn里有什么 不同人还不一样的
  * @returns {boolean}
  */
