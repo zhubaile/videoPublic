@@ -1,5 +1,5 @@
 import Taro from "@tarojs/taro";
-import { ENV } from './env';
+import { ENV } from 'utils/env';
 import { getDeferred, isIDE, isFunction, NOOP, sleep } from './index';
 import { Logger } from './logger';
 import moment from 'moment';

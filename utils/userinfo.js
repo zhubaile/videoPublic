@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro';
-import { ENV } from './env';
+import { ENV } from 'utils/env';
 import { getDeferred, isIDE, NOOP, isEmpty } from './index';
 import { Logger } from './logger';
 import { entry, initphpSessionIdDeferred, api } from './api';

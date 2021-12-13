@@ -1,5 +1,5 @@
 import { isEmpty, NOOP } from './index';
-import { ENV } from './env';
+import { ENV } from 'utils/env';
 import { Logger } from './logger';
 import { getUserInfo } from './userinfo';
 import { resetAuthorize } from './resetAuthorize';

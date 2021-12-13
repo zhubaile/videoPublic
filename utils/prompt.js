@@ -1,7 +1,7 @@
 import Taro from '@tarojs/taro';
 import { NOOP } from './index';
 import { events } from './eventManager';
-import { ENV } from './env';
+import { ENV } from 'utils/env';
 
 /**
  * 显示二次确认弹窗
